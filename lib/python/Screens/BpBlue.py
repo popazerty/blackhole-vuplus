@@ -307,11 +307,16 @@ class BhsysInfo(Screen):
 		os_remove("/tmp/syinfo.tmp")
 		
 		text += "\n" + _("SOFTWARE") + "\n"
-		f = open("/etc/bhversion",'r')
-		text += "Firmware v.:\t" + f.readline()
-		f.close()
+		#f = open("/etc/bhversion",'r')
+		#text += "Firmware v.:\t" + f.readline()
+		#f.close()
 		text += "Enigma2 v.: \t" +  about.getEnigmaVersionString() + "\n"
 		text += "Kernel v.: \t" +  about.getKernelVersionString() + "\n"
+		
+		text += "\n" + _("FIRMWARE") + "\n"
+                text += "Image v.: \t" +  about.getImageTypeString() + "\n"
+		text += "OpenGl v.: \t" +  _("GLS 2.0 ") + "\n"
+                text += "OE CORE v.: \t" +  _("Alliance 3.0 ") + "\n"
 		
 		self["lab1"].setText(text)
 		
