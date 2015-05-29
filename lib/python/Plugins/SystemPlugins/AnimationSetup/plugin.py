@@ -9,10 +9,10 @@ from Plugins.Plugin import PluginDescriptor
 
 from enigma import setAnimation_current, setAnimation_speed
 
-# default = grow from left
+# default = simple fade
 g_default = {
-        "current": 3,
-        "speed"  : 10,
+        "current": 1,
+        "speed"  : 20,
 }
 g_max_speed = 30
 
