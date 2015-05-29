@@ -292,6 +292,13 @@ class Nab_downArea(Screen):
 		res = (name, png, idx)
 		self.list.append(res)
 		
+		mypixmap = mypath + "icons/nabuploads.png"
+		png = LoadPixmap(mypixmap)
+		name = _("Black Hole Softcam")
+		idx = 9
+		res = (name, png, idx)
+		self.list.append(res)
+		
 		self["list"].list = self.list
 	
 		
@@ -330,7 +337,10 @@ class Nab_downArea(Screen):
 			self.title = "Black Hole Picons Packages"
 		elif  self.sel == 8:
 			self.url = "http://www.vuplus-community.net/bhaddons/index.php?op=" + catver
-			self.title = "Latest 10 Uploads"	
+			self.title = "Latest 10 Uploads"
+		elif  self.sel == 9:
+			self.url = "http://sodo13.zz.mu/_Blackhole softcam" 
+			self.title = "Black Hole Softcam"	
 			
 			
 		downfile = "/tmp/cpanel.tmp"	
