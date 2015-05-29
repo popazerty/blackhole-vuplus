@@ -307,9 +307,9 @@ class BhsysInfo(Screen):
 		os_remove("/tmp/syinfo.tmp")
 		
 		text += "\n" + _("SOFTWARE") + "\n"
-		#f = open("/etc/bhversion",'r')
-		#text += "Firmware v.:\t" + f.readline()
-		#f.close()
+#		f = open("/etc/bhversion",'r')
+#		text += "Firmware v.:\t" + f.readline()
+#        	f.close()
 		text += "Enigma2 v.: \t" +  about.getEnigmaVersionString() + "\n"
 		text += "Kernel v.: \t" +  about.getKernelVersionString() + "\n"
 		
